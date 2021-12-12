@@ -1,0 +1,198 @@
+.mainContainer {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  padding: 40px 0;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2b2d42;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.selectedMenuItem {
+  color: #ffffff;
+  text-align: center;
+  margin: 0 25px;
+  cursor: pointer;
+}
+
+.menuItem {
+  color: #ffffffb0;
+  text-align: center;
+  margin: 0 25px;
+  cursor: pointer;
+}
+
+.itemTitle {
+  font-weight: bold;
+}
+
+.itemSubTitle {
+}
+
+.loginButton {
+  border: none;
+  outline: none;
+  background-color: #41b1ea;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.loginContainer {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  background-color: #cccccc;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: default;
+}
+
+.inputTextbox {
+  font-size: 15px;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.submitButton {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #41b1ea;
+  padding: 10px 0;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.newAccountButton {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: black;
+  padding: 10px 0;
+  cursor: pointer;
+  width: 100%;
+  text-decoration: underline;
+}
+
+.errorLabel {
+  color: #ff4a4a;
+  font-size: 13px;
+  text-align: left;
+}
+
+.userMenu {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  background-color: #41b1ea;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: default;
+}
+
+.userMenuButton {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 5px 0;
+  width: 100%;
+  font-weight: bold;
+}
+
+.loader {
+  font-size: 10px;
+  margin: auto;
+  text-indent: -9999em;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  background: -moz-linear-gradient(
+    left,
+    #ffffff 10%,
+    rgba(255, 255, 255, 0) 42%
+  );
+  background: -webkit-linear-gradient(
+    left,
+    #ffffff 10%,
+    rgba(255, 255, 255, 0) 42%
+  );
+  background: -o-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -ms-linear-gradient(
+    left,
+    #ffffff 10%,
+    rgba(255, 255, 255, 0) 42%
+  );
+  background: linear-gradient(
+    to right,
+    #ffffff 10%,
+    rgba(255, 255, 255, 0) 42%
+  );
+  position: relative;
+  -webkit-animation: load3 1.4s infinite linear;
+  animation: load3 1.4s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.loader:before {
+  width: 50%;
+  height: 50%;
+  background: #ffffff;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+}
+.loader:after {
+  background: #41b1ea;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

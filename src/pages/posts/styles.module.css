@@ -1,0 +1,56 @@
+.container {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.searchContainer {
+  display: flex;
+  width: 100%;
+}
+
+.searchInput {
+  padding: 10px 15px;
+  margin-right: 10px;
+  flex: 1;
+}
+
+.searchButton {
+}
+
+.postContainer {
+  background-color: #cccccc;
+  border-radius: 5px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.title {
+  background-color: #41b1ea;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  word-wrap: break-word;
+}
+
+.description {
+  padding: 10px 20px;
+  word-wrap: break-word;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.fileContainer {
+  margin: 10px;
+  background-color: white;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 5px;
+  text-decoration: underline;
+  cursor: pointer;
+}
