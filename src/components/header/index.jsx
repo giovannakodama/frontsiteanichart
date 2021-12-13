@@ -55,7 +55,7 @@ export const Header = () => {
         setLoading(true)
         const xHttp = new XMLHttpRequest()
         xHttp.onload = onLoginResponse
-        xHttp.open("POST", "http://localhost:3000/login", true)
+        xHttp.open("POST", "https://projeto-web-3-anichart.herokuapp.com/login", true)
         xHttp.setRequestHeader("Content-Type", "application/json")
         xHttp.send(JSON.stringify({
             email,

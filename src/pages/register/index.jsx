@@ -34,7 +34,7 @@ export const Register = () => {
             setLoading(true)
             const xHttp = new XMLHttpRequest()
             xHttp.onload = onRegisterResponse
-            xHttp.open("POST", "http://localhost:3000/register", true)
+            xHttp.open("POST", "https://projeto-web-3-anichart.herokuapp.com/register", true)
             xHttp.setRequestHeader("Content-Type", "application/json")
             xHttp.send(JSON.stringify({
                 email,

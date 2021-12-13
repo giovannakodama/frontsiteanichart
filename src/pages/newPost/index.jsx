@@ -37,7 +37,7 @@ export const NewPost = () => {
             setLoading(true)
             const xHttp = new XMLHttpRequest()
             xHttp.onload = onNewPostResponse
-            xHttp.open("POST", "http://localhost:3000/newPost", true)
+            xHttp.open("POST", "https://projeto-web-3-anichart.herokuapp.com/newPost", true)
             xHttp.setRequestHeader("Authorization", `Bearer ${document.cookie.replace(/token=(.*)/, "$1")}`)
             const formData = new FormData()
             formData.append("titulo", title)
